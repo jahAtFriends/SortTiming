@@ -38,4 +38,7 @@ You should also include the following files:
 - TimeTrial.java
 
 Please include the relevant, fully generic sort in the corresponding file and conduct your timing in the class TimeTrial.java.
-It is important that you name the files correctly before pushing to GitHub.
+It is important that you name the files correctly before pushing to GitHub. Additionally, each sort should contain a _single_
+public method `public static <T extends Comparable<T>> void sort(T[] arr) {} ` which _sorts_ the array that is passed to it.
+Note that this is a departure from the earlier version of the assignment requiring you to return a sorted _copy_ of the array.
+This means that copying the array before sorting will need to be handled in the client (in our case TimeTrial.java)
